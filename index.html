@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priyanshu Raj | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'blob': 'blob 10s infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              },
+            },
+            colors: {
+              border: "hsl(var(--border))",
+              input: "hsl(var(--input))",
+              ring: "hsl(var(--ring))",
+              background: "hsl(var(--background))",
+              foreground: "hsl(var(--foreground))",
+              primary: {
+                DEFAULT: "hsl(var(--primary))",
+                foreground: "hsl(var(--primary-foreground))",
+              },
+              secondary: {
+                DEFAULT: "hsl(var(--secondary))",
+                foreground: "hsl(var(--secondary-foreground))",
+              },
+              muted: {
+                DEFAULT: "hsl(var(--muted))",
+                foreground: "hsl(var(--muted-foreground))",
+              },
+              accent: {
+                DEFAULT: "hsl(var(--accent))",
+                foreground: "hsl(var(--accent-foreground))",
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0f172a; /* Slate 900 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155; /* Slate 700 */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569; /* Slate 600 */
+      }
+      
+      :root {
+        /* Premium Modern Dark Theme (Deep Slate/Navy base) */
+        /* Increased lightness slightly from previous version for "cleaner" look */
+        --background: 222 47% 8%; /* #0b1121 - Deep Navy/Slate, not black */
+        --foreground: 210 40% 98%;
+        
+        --card: 222 47% 11%; /* #0f172a - Lighter than bg */
+        --card-foreground: 210 40% 98%;
+        
+        --popover: 222 47% 11%;
+        --popover-foreground: 210 40% 98%;
+        
+        --primary: 186 100% 50%; /* Cyan 400 - Bright & Pop */
+        --primary-foreground: 222 47% 11%;
+        
+        --secondary: 217 33% 15%; /* Slate 800ish */
+        --secondary-foreground: 210 40% 98%;
+        
+        --muted: 217 33% 15%;
+        --muted-foreground: 215 20% 70%;
+        
+        --accent: 217 33% 15%;
+        --accent-foreground: 210 40% 98%;
+        
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 210 40% 98%;
+        
+        --border: 217 33% 18%; /* Subtle, visible borders */
+        --input: 217 33% 18%;
+        --ring: 186 100% 50%;
+        --radius: 0.75rem;
+      }
+      
+      ::selection {
+        background-color: rgba(34, 211, 238, 0.2); /* Cyan selection */
+        color: white;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-background text-foreground antialiased overflow-x-hidden selection:bg-cyan-500/30 selection:text-cyan-100">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
