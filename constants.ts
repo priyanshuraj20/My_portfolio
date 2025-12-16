@@ -352,16 +352,6 @@ export const DATA = {
       platform: "Apna College",
       platformLogo: "/Logo/Apna college.png",
     },
-
-    {
-      title: "Data Structures & Algorithms (ongoing)",
-      issuer: "Smart Interview",
-      year: "2025",
-      description: "Ongoing preparation and certification track for DSA.",
-      file: "smartinterview-dsa.png",
-      platform: "Smart Interview",
-      platformLogo: "/Logo/Smart interview.jpeg",
-    },
   ],
   codingProfiles: [
     {
